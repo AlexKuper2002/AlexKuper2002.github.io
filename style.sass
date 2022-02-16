@@ -9,7 +9,8 @@
     margin: 0 auto
 
 body
-    background-color: #000
+    // background-color: #000
+    position: relative
 
 .header
     color: #fff
@@ -17,6 +18,12 @@ body
     display: flex
     justify-content: space-between
     align-items: center
+    z-index: 1000
+    position: absolute
+    max-width: 1300px
+    width: 100%
+    padding-top: 30px
+    
     &__logo
         display: flex
         align-items: center
@@ -45,10 +52,10 @@ body
         color: #fff
         line-height: 24.51px
         padding-bottom: 8px
-        transition: oll .5s linear
+        transition: all .5s linear
     &__list-link:hover
         border-bottom: 2px solid
-        transition: oll .5s linear
+        transition: all .5s linear
     &__serch
         display: flex
         align-items: center
@@ -72,3 +79,55 @@ body
                 top: 50%
                 right: 0px
                 transform: translateY(-50%)
+
+.top-banner
+    height: 1065px
+    background: url("img/main.jpg")
+    z-index: 1
+    &__wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-top: 285px
+    &__subtitle
+        font-family: 'Open Sans', sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 33px
+        text-transform: uppercase
+        color: #fff
+    &__title
+        font-family: 'Open Sans Condensed', sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 165px
+        line-height: 225px
+        color: #fff
+        margin: 0 auto
+.btn
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 60px
+    width: 150px
+    background-color: #16DCF0
+    border-radius: 5px
+    margin-top: 30px
+    text-decoration: none
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    color: #fff
+
+
+
+
+    
+    
+
+
+    
+
