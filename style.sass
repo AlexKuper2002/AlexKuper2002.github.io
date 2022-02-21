@@ -127,7 +127,7 @@ body
     align-items: center
     flex-direction: column
 .gallery__title
-    font-family: Open Sans Condensed
+    font-family: 'Open Sans', Condensed
     font-style: normal
     font-weight: bold
     font-size: 48px
@@ -136,15 +136,108 @@ body
     text-transform: uppercase
     color: #262626
 .gallery__subtitle
-    
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 447px
+    width: 100%
     font-family: 'Open Sans', sans-serif
     font-weight: 400
     font-size: 16px
     line-height: 19.2px
+    text-align: center
 .gallery__item-wrapper
+    margin-top: 52px
     display: flex
     align-items: space-between
     column-gap: 36px
+.gallery__item
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    width: 100%
+    max-width: 312px
+    height: 100%
+    max-height: 417px
+    position: relative
+.item-image
+    z-index: 1
+.item-description
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 100%
+    max-width: 312px
+    height: 100%
+    max-height: 165px
+    background: linear-gradient(90deg,#00C7DC 6.25%, rgba(22, 220, 240, 0.46) 100%)
+    position: absolute
+    z-index: 5
+    margin-top: 252px
+    
+    animation-name: desc
+    animation-duration: 1s
+    animation-timing-function: ease-out
+    animation-iteration-count: 1
+    animation-direction: normal
+    animation-play-state: running
+    animation-delay: 0s
+    animation-fill-mode: none
+
+.item-faw
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: space-around
+    width: 100%
+    max-width: 50px
+    height: 100%
+    max-height: 50px
+    background: linear-gradient(90deg,#00C7DC 6.25%, rgba(22, 220, 240, 0.46) 100%)
+    position: absolute
+    z-index: 5
+.item-header
+    font-family:'Open Sans', Hebrew Condensed
+    font-weight: 700
+    font-size: 24px
+    line-height: 33px
+    color: #fff
+    padding-top: 22px
+    padding-left: 20px
+.item-text
+    font-family:'Open Sans', Hebrew Condensed
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    color: #fff
+    padding-left: 20px
+.read_more
+    text-decoration: none
+    font-family:'Open Sans', Hebrew Condensed
+    font-weight: 700
+    font-size: 16px
+    line-height: 22px
+    color: #fff
+    text-align: right
+    padding-right: 20px
+
+    // animation
+@keyframes desc
+    0%
+        margin-left: 100%
+        width: 300%
+    100%
+        margin-left: 0
+        width: 100%
+
+
+        
+
+
+
+
+
+
         
 
 
