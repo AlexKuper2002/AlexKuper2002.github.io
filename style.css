@@ -206,6 +206,9 @@ body {
   position: absolute;
   z-index: 5;
   margin-top: 252px;
+}
+
+.item-description:hover {
   -webkit-animation-name: desc;
           animation-name: desc;
   -webkit-animation-duration: 1s;
